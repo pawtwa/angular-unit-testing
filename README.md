@@ -30,6 +30,26 @@
     - Cypress
     - End to end tools
 
+#### Writing Good Unit Tests
+
+- Structuring Tests
+    - __Arrange__ all necessary preconditions and inputs
+    - __Act__ on the object or class under test
+    - __Assert__ that the expected results have occurred
+- DAMP vs DRY
+    - DRY (do not repeat yourself1)
+        - Remove duplications
+    - DAMP
+        - Repeat yourself if necessary
+- Tell the Story
+    - A test should be a complete story, all within the _it()_
+    - You should not need to look around much to understand the test
+    - Techniques
+        - Move less interesting setup into _beforeEach()_
+        - Keep critical setup within the _it()_
+        - Include _Arrange_, _Act_ and _Assert_ inside _it()_
+    
+
 ## Isolated Unit Tests
 ##### branch: _[isolated-unit-tests](https://github.com/pawtwa/angular-unit-testing/tree/isolated-unit-tests "Isolated Unit Tests")_
 
